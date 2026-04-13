@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+
+    background: url("images/cabecera\ \(1\).png") center/cover no-repeat;
+
+    /* opcional si quieres un ligero overlay */
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end; /* TODO a la derecha */
+    align-items: center;
+
+    padding: 20px 50px;
+    gap: 20px;
+
+    z-index: 10;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-whatsapp {
+    background: #25D366; /* color Whats */
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+}
+
+.navbar {
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+}
+
+.destinos,
+.about {
+    background: url("images/fondo ondas.png") center/cover no-repeat;
+    padding: 60px 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* para responsive */
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+
+    z-index: 2;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.card p {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+
+    background: #6a0dad; /* morado */
+    color: white;
+
+    padding: 5px 10px;
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+.card span {
+    display: block;
+    padding: 10px 12px;
+    font-size: 13px;
+    background: white;
+    color: #333;
+}
+
+#destinos h2,
+#nosotros h2 {
+    color: #ff2fa8;
+
+    font-family: "Pacifico", cursive;
+    font-weight: 400; /* Pacifico no usa pesos fuertes */
+
+    font-size: 44px;
+    text-align: center;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        0 3px 10px rgba(255, 47, 168, 0.25);
+
+}
+
+.titulo-seccion h2 {
+    color: #ff2fa8;
+    font-family: "Pacifico", cursive;
+    font-size: 44px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.titulo-seccion .linea {
+    flex: 1;
+    height: 2px;
+
+    background: linear-gradient(to right, transparent, #ff2fa8);
+}
+
+.titulo-seccion .linea:last-child {
+    background: linear-gradient(to left, transparent, #ff2fa8);
+}
+
+#destinos p {
+    text-align: center;
+    margin: 10px auto 30px auto;
+    max-width: 600px;
+
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+
+    margin: 40px auto; /* 👈 centrado */
+
+    background: #ff2fa8; /* fucsia */
+    color: white;
+
+    padding: 14px 30px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
+}
+
+.about {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-img {
+    position: absolute;
+    inset: 0;
+}
+
+.about-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        white 0%,          /* izquierda blanca (para texto negro) */
+        rgba(255,255,255,0.8) 25%,
+        rgba(255,255,255,0.4) 45%,
+        transparent 70%    /* derecha imagen limpia */
+    );
+}
+
+.about-text {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+
+    transform: translateY(-50%);
+    z-index: 2;
+
+    max-width: 500px;
+    color: black;
+}
+
+.about-text p {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.about-text li {
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo-seccion::after {
+    content: "";
+    height: 2px;
+    width: 150px;
+
+    background: linear-gradient(
+        to left,
+        #ff2fa8,   /* rosa fuerte */
+        transparent
+    );
+}
+
+.titulo-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #ff6ec7   /* rosa bonito, no tan intenso */
+    );
+}
+
+.cta h2 {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #2a0a3d; /* morado oscuro elegante */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 👈 esto alinea todo verticalmente */
+    gap: 20px;
+    background-color: #2a0a3d; /* morado oscuro elegante */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    opacity: 0.7;
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+}
+
+.features span {
+    padding: 0 15px;
+    position: relative;
+}
+
+/* separadores */
+.features span:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 1px;
+    height: 15px;
+    background: white;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 0; /* quitamos el espacio de antes */
+
+    padding-left: 15px;
+    position: relative;
+}
+
+/* línea antes de redes */
+.social::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 1px;
+    height: 15px;
+    background: white;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    opacity: 0.7;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    opacity: 0.7;
+}
