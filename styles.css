@@ -5,14 +5,13 @@
 }
 
 .hero {
-    
-    background-attachment: scroll; /* evita bugs raros en zoom */
-    min-height: 100vh; /* 👈 en vez de height fijo */
+    background-image: url("images/cabecera.png");
+    background-size: cover;        /* 👈 CLAVE */
+    background-position: center;   /* 👈 CLAVE */
+    background-repeat: no-repeat;
 
-
-
+    min-height: 100vh;
     position: relative;
-    z-index: 2;
 }
 
 .navbar {
@@ -502,3 +501,4 @@ footer {
   }
 
 }
+
