@@ -5,12 +5,14 @@
 }
 
 .hero {
-    height: 100vh;
+    
+    background-attachment: scroll; /* evita bugs raros en zoom */
+    min-height: 100vh; /* 👈 en vez de height fijo */
 
-    background: url("images/cabecera\ \(1\).png") center/cover no-repeat;
 
-    /* opcional si quieres un ligero overlay */
+
     position: relative;
+    z-index: 2;
 }
 
 .navbar {
@@ -90,23 +92,32 @@
 
 .card h3 {
     position: absolute;
-    bottom: 60px;
+    bottom: 80px;
     left: 15px;
 
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 
-    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    z-index: 3;
 
-    z-index: 2;
+    text-shadow: 
+        0 3px 10px rgba(0,0,0,0.8),
+        0 0 5px rgba(0,0,0,0.5);
 }
 
 .card::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.3);
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.1),
+        transparent
+    );
+
     z-index: 1;
 }
 
@@ -123,9 +134,11 @@
 
     font-size: 14px;
     font-weight: bold;
+  
 
     z-index: 2;
 }
+
 
 .card span {
     display: block;
@@ -184,7 +197,7 @@
     margin: 10px auto 30px auto;
     max-width: 600px;
 
-    color: #666;
+    color: #7a7a7a;
     font-size: 16px;
     line-height: 1.6;
 }
