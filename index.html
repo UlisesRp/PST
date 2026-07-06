@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Pink Sky Travel | Agencia de viajes en México</title>
-  <meta name="description" content="Agencia de viajes en México. Paquetes a Cancún, Bacalar, Colombia y París con vuelo, hospedaje y experiencias únicas. Reserva fácil por WhatsApp.">
+  <title>Pink Sky Travel Mayorista | Mayorista de viajes para agencias</title>
+  <meta name="description" content="Pink Sky Travel Mayorista. Paquetes, tarifas comisionables, salidas grupales y soporte para agencias de viajes en México. Más que un mayorista, tu mejor aliado.">
   <meta name="robots" content="index, follow">
 
-  <meta property="og:title" content="Pink Sky Travel">
-  <meta property="og:description" content="Viajes, paquetes y experiencias únicas desde México.">
+  <meta property="og:title" content="Pink Sky Travel Mayorista">
+  <meta property="og:description" content="Mayorista de viajes para agencias. Tarifas comisionables, salidas grupales y soporte comercial.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/cabecera.png">
+  <meta property="og:image" content="images/logomayorista.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -23,53 +23,65 @@
 <body>
 
   <header id="inicio" class="hero">
-    <nav class="navbar">
-      <a href="#inicio" class="logo">
-        <span class="logo-icon">✈</span>
-        <span>Pink Sky Travel</span>
+    <nav class="navbar" id="navbar">
+      <a href="#inicio" class="brand" aria-label="Pink Sky Travel Mayorista">
+        <img src="images/mundo pink 2-Photoroom.png" alt="Pink Sky Travel Mayorista de Viajes">
       </a>
 
-      <ul class="nav-links">
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#paquetes">Paquetes</a></li>
-        <li><a href="#destinos">Destinos</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#proceso">Cómo trabajar</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
 
-      <a href="https://wa.me/525610418133" class="nav-cta" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://wa.me/525610418133" class="nav-cta" target="_blank" rel="noopener">Solicitar tarifas</a>
     </nav>
 
-    <div class="hero-overlay"></div>
-
     <div class="hero-content">
-      <div class="hero-text">
-        <span class="eyebrow">Viajes, paquetes y experiencias</span>
-        <h1>Explora el mundo con Pink Sky Travel</h1>
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Mayorista de viajes para agencias</span>
+        <h1>Más que un mayorista, tu mejor aliado.</h1>
         <p>
-          Deja la planeación en nuestras manos. Tú solo prepárate para vivir una experiencia increíble.
+          Conecta tu agencia con paquetes, salidas grupales y experiencias listas para vender.
+          Nosotros respaldamos la operación, tú haces crecer tus ventas.
         </p>
 
         <div class="hero-actions">
-          <a href="#paquetes" class="btn btn-primary">Ver paquetes</a>
-          <a href="https://wa.me/525610418133" class="btn btn-outline" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          <a href="https://wa.me/525610418133?text=Hola,%20quiero%20informaci%C3%B3n%20de%20tarifas%20mayoristas%20para%20mi%20agencia" class="btn btn-primary" target="_blank" rel="noopener">Quiero tarifas mayoristas</a>
+          <a href="#productos" class="btn btn-outline">Ver productos</a>
+        </div>
+
+        <div class="trust-row">
+          <span>Tarifas comisionables</span>
+          <span>Soporte a agencias</span>
+          <span>Salidas nacionales e internacionales</span>
         </div>
       </div>
 
-      <div class="hero-gallery" aria-label="Destinos destacados">
-        <div class="hero-card hero-card-large">
-          <img src="images/paris.jfif" alt="París">
-          <span>París</span>
-        </div>
+      <div class="hero-panel reveal">
+        <div class="premium-card">
+          <span class="card-label">Aliados PST</span>
+          <h2>Impulsa tu agencia con productos listos para vender</h2>
+          <p>Recibe información clara, material comercial y seguimiento para cerrar más fácil.</p>
 
-        <div class="hero-card">
-          <img src="images/bacalar.jpg" alt="Bacalar">
-          <span>Bacalar</span>
-        </div>
-
-        <div class="hero-card hero-card-small">
-          <img src="images/cancun.png" alt="Cancún">
-          <span>Cancún</span>
+          <div class="mini-stats">
+            <div>
+              <strong data-count="6">0</strong>
+              <span>Años de experiencia</span>
+            </div>
+            <div>
+              <strong data-count="100">0</strong>
+              <span>Enfoque en agencias</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -77,194 +89,161 @@
 
   <main>
 
-    <section id="paquetes" class="section deals-section">
-      <div class="section-card">
-        <div class="section-heading">
-          <span class="mini-label">Promociones</span>
-          <h2>Hot deals</h2>
-          <p>Elige tu próxima aventura y reserva fácil con nuestro equipo.</p>
-        </div>
-
-        <div class="deal-grid">
-          <article class="deal-card">
-            <img src="images/cancun.png" alt="Cancún mar turquesa">
-            <div class="deal-content">
-              <h3>Cancún</h3>
-              <ul>
-                <li>✈ Vuelo + hospedaje</li>
-                <li>🏨 All Inclusive</li>
-                <li>💬 Asesoría personalizada</li>
-              </ul>
-              <p>Desde <strong>$10,900 MXN</strong> p/p</p>
-              <a href="https://wa.me/525610418133?text=Hola,%20quiero%20cotizar%20Canc%C3%BAn" target="_blank" rel="noopener">Descubrir ahora</a>
-            </div>
-          </article>
-
-          <article class="deal-card">
-            <img src="images/bacalar.jpg" alt="Laguna de Bacalar">
-            <div class="deal-content">
-              <h3>Bacalar</h3>
-              <ul>
-                <li>✈ Vuelo + hospedaje</li>
-                <li>⛵ Viaje en velero</li>
-                <li>🌊 Laguna de los 7 colores</li>
-              </ul>
-              <p>Desde <strong>$9,850 MXN</strong> p/p</p>
-              <a href="https://wa.me/525610418133?text=Hola,%20quiero%20cotizar%20Bacalar" target="_blank" rel="noopener">Descubrir ahora</a>
-            </div>
-          </article>
-
-          <article class="deal-card">
-            <img src="images/colombia.jpg" alt="Colombia">
-            <div class="deal-content">
-              <h3>Colombia</h3>
-              <ul>
-                <li>✈ Vuelo + hospedaje</li>
-                <li>📍 Recorridos incluidos</li>
-                <li>🌆 Experiencia completa</li>
-              </ul>
-              <p>Desde <strong>$888 USD</strong> p/p</p>
-              <a href="https://wa.me/525610418133?text=Hola,%20quiero%20cotizar%20Colombia" target="_blank" rel="noopener">Descubrir ahora</a>
-            </div>
-          </article>
-
-          <article class="deal-card">
-            <img src="images/paris.jfif" alt="París torre eiffel">
-            <div class="deal-content">
-              <h3>París</h3>
-              <ul>
-                <li>✈ Vuelo + hospedaje</li>
-                <li>📸 Recorridos</li>
-                <li>💜 Viaje soñado</li>
-              </ul>
-              <p>Desde <strong>$1,988 USD</strong> p/p</p>
-              <a href="https://wa.me/525610418133?text=Hola,%20quiero%20cotizar%20Par%C3%ADs" target="_blank" rel="noopener">Descubrir ahora</a>
-            </div>
-          </article>
-        </div>
-
-        <p class="legal-note">*Precios sujetos a disponibilidad y cambios sin previo aviso.</p>
-      </div>
-    </section>
-
-    <section id="destinos" class="section destinations-section">
+    <section id="productos" class="section products-section reveal">
       <div class="section-heading">
-        <span class="mini-label">Inspiración viajera</span>
-        <h2>Top destinos</h2>
-        <p>Experiencias para escaparte, celebrar, descansar o conocer algo nuevo.</p>
+        <span class="mini-label">Productos para agencias</span>
+        <h2>Catálogo mayorista</h2>
+        <p>Productos seleccionados para que tu agencia pueda vender con respaldo, claridad y buena presentación.</p>
       </div>
 
-      <div class="destination-mosaic">
-        <article class="destination-card destination-tall">
-          <img src="images/bacalar.jpg" alt="Bacalar">
-          <div>
-            <span>México</span>
-            <h3>Bacalar</h3>
-            <p>Laguna, velero, descanso y paisajes brutales para desconectarte.</p>
-          </div>
-        </article>
-
-        <article class="destination-card">
+      <div class="product-grid">
+        <article class="product-card">
           <img src="images/cancun.png" alt="Cancún">
-          <div>
+          <div class="product-content">
             <span>Caribe mexicano</span>
             <h3>Cancún</h3>
+            <p>Paquetes para clientes que buscan playa, hotelería y experiencias completas.</p>
+            <a href="https://wa.me/525610418133?text=Hola,%20quiero%20tarifa%20mayorista%20de%20Canc%C3%BAn" target="_blank" rel="noopener">Solicitar tarifa</a>
           </div>
         </article>
 
-        <article class="destination-card">
+        <article class="product-card">
+          <img src="images/bacalar.jpg" alt="Bacalar">
+          <div class="product-content">
+            <span>México mágico</span>
+            <h3>Bacalar</h3>
+            <p>Experiencias con hospedaje, tours y opciones ideales para escapadas.</p>
+            <a href="https://wa.me/525610418133?text=Hola,%20quiero%20tarifa%20mayorista%20de%20Bacalar" target="_blank" rel="noopener">Solicitar tarifa</a>
+          </div>
+        </article>
+
+        <article class="product-card">
           <img src="images/colombia.jpg" alt="Colombia">
-          <div>
-            <span>Sudamérica</span>
+          <div class="product-content">
+            <span>Internacional</span>
             <h3>Colombia</h3>
+            <p>Paquetes con recorridos y experiencias para clientes que quieren descubrir Sudamérica.</p>
+            <a href="https://wa.me/525610418133?text=Hola,%20quiero%20tarifa%20mayorista%20de%20Colombia" target="_blank" rel="noopener">Solicitar tarifa</a>
           </div>
         </article>
 
-        <article class="destination-card destination-wide">
+        <article class="product-card">
           <img src="images/paris.jfif" alt="París">
-          <div>
+          <div class="product-content">
             <span>Europa</span>
             <h3>París</h3>
-          </div>
-        </article>
-
-        <article class="destination-card">
-          <img src="images/avion.jpg" alt="Viajes a la medida">
-          <div>
-            <span>Personalizado</span>
-            <h3>Viajes a tu medida</h3>
+            <p>Opciones internacionales para clientes que buscan viajes memorables.</p>
+            <a href="https://wa.me/525610418133?text=Hola,%20quiero%20tarifa%20mayorista%20de%20Par%C3%ADs" target="_blank" rel="noopener">Solicitar tarifa</a>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="nosotros" class="responsibilities">
-      <div class="responsibilities-overlay"></div>
+    <section id="beneficios" class="section benefits-section">
+      <div class="benefits-copy reveal">
+        <span class="mini-label">Por qué trabajar con PST</span>
+        <h2>Un mayorista pensado para agencias reales</h2>
+        <p>
+          Sabemos que tu agencia necesita respuestas rápidas, información clara y productos que puedas presentar sin complicarte.
+          Por eso estructuramos nuestra operación para apoyarte antes, durante y después de la venta.
+        </p>
 
-      <div class="section-heading light">
-        <span class="mini-label">Nuestro compromiso</span>
-        <h2>Viajamos contigo antes, durante y después</h2>
-        <p>Te acompañamos para que tu experiencia sea clara, segura y bien organizada.</p>
+        <a href="https://wa.me/525610418133?text=Hola,%20quiero%20registrar%20mi%20agencia%20con%20Pink%20Sky%20Travel%20Mayorista" class="btn btn-primary" target="_blank" rel="noopener">Registrar mi agencia</a>
       </div>
 
-      <div class="features-grid">
-        <article class="feature-box">
-          <span>✓</span>
-          <h3>Siempre disponibles</h3>
-          <p>Atención personalizada para resolver dudas de tu viaje.</p>
+      <div class="benefits-grid reveal">
+        <article>
+          <span>01</span>
+          <h3>Tarifas comisionables</h3>
+          <p>Precios pensados para que tu agencia pueda integrar su ganancia.</p>
         </article>
 
-        <article class="feature-box">
-          <span>✓</span>
-          <h3>Paquetes a la medida</h3>
-          <p>Buscamos opciones de acuerdo con tu presupuesto y estilo.</p>
+        <article>
+          <span>02</span>
+          <h3>Soporte comercial</h3>
+          <p>Te ayudamos con información, dudas y detalles del producto.</p>
         </article>
 
-        <article class="feature-box">
-          <span>✓</span>
-          <h3>Reserva fácil</h3>
-          <p>Cotiza y recibe información directa por WhatsApp.</p>
+        <article>
+          <span>03</span>
+          <h3>Material para vender</h3>
+          <p>Contenido claro para que puedas presentar mejor cada salida.</p>
         </article>
 
-        <article class="feature-box">
-          <span>✓</span>
-          <h3>Experiencia confiable</h3>
-          <p>Más de 6 años creando viajes y momentos especiales.</p>
+        <article>
+          <span>04</span>
+          <h3>Operación confiable</h3>
+          <p>Seguimiento para que tu cliente viaje con respaldo y tranquilidad.</p>
         </article>
       </div>
     </section>
 
-    <section id="contacto" class="cta-section">
-      <div>
-        <span class="mini-label">¿Listo para viajar?</span>
-        <h2>Planea tu próximo viaje con Pink Sky Travel</h2>
-        <p>Cuéntanos destino, fechas aproximadas y número de pasajeros. Te ayudamos a cotizar.</p>
+    <section id="proceso" class="section process-section reveal">
+      <div class="section-heading">
+        <span class="mini-label">Proceso simple</span>
+        <h2>Cómo trabajar con nosotros</h2>
+        <p>Un flujo claro para que tu agencia pueda cotizar, apartar y vender sin vueltas.</p>
       </div>
 
-      <a href="https://wa.me/525610418133" class="btn btn-primary" target="_blank" rel="noopener">Enviar mensaje</a>
+      <div class="process-grid">
+        <article class="process-card">
+          <span>1</span>
+          <h3>Contáctanos</h3>
+          <p>Escríbenos por WhatsApp y comparte los datos de tu agencia.</p>
+        </article>
+
+        <article class="process-card">
+          <span>2</span>
+          <h3>Solicita producto</h3>
+          <p>Pregunta por destino, fechas, disponibilidad y condiciones.</p>
+        </article>
+
+        <article class="process-card">
+          <span>3</span>
+          <h3>Aparta lugares</h3>
+          <p>Te compartimos la información para formalizar el apartado.</p>
+        </article>
+
+        <article class="process-card">
+          <span>4</span>
+          <h3>Vende con respaldo</h3>
+          <p>Tu agencia atiende al cliente y PST respalda la operación.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alliance-section reveal">
+      <div class="alliance-card">
+        <div>
+          <span class="mini-label">Alianza mayorista</span>
+          <h2>Haz crecer tu agencia con productos que sí se pueden vender</h2>
+          <p>
+            Escríbenos para recibir información mayorista, promociones vigentes y opciones para tus clientes.
+          </p>
+        </div>
+
+        <a href="https://wa.me/525610418133?text=Hola,%20quiero%20trabajar%20con%20Pink%20Sky%20Travel%20Mayorista" class="btn btn-light" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+      </div>
     </section>
 
   </main>
 
-  <footer class="footer">
+  <footer id="contacto" class="footer">
     <div class="footer-brand">
-      <a href="#inicio" class="logo footer-logo">
-        <span class="logo-icon">✈</span>
-        <span>Pink Sky Travel</span>
-      </a>
-      <p>Escape de lo ordinario con experiencias hechas para ti.</p>
+      <img src="images/logomayorista.png" alt="Pink Sky Travel Mayorista">
+      <p>Más que un mayorista, tu mejor aliado.</p>
     </div>
 
     <div class="footer-links">
       <h3>Links rápidos</h3>
-      <a href="#paquetes">Paquetes</a>
-      <a href="#destinos">Destinos</a>
-      <a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#proceso">Cómo trabajar</a>
       <a href="#contacto">Contacto</a>
     </div>
 
     <div class="footer-contact">
-      <h3>Contacto</h3>
+      <h3>Contacto para agencias</h3>
       <a href="https://wa.me/525610418133" target="_blank" rel="noopener">WhatsApp: 56 1041 8133</a>
 
       <div class="social">
@@ -284,8 +263,11 @@
   </footer>
 
   <div class="copyright">
-    <p>© 2026 Pink Sky Travel®. Todos los derechos reservados.</p>
+    <p>© 2026 Pink Sky Travel Mayorista®. Todos los derechos reservados.</p>
   </div>
 
+  <a href="https://wa.me/525610418133?text=Hola,%20quiero%20informaci%C3%B3n%20de%20Pink%20Sky%20Travel%20Mayorista" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+
+  <script src="app.js"></script>
 </body>
 </html>
