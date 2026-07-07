@@ -696,6 +696,20 @@ img {
   transform: translateY(0);
 }
 
+
+/* Refuerzo de subtítulos en secciones claras */
+.section .mini-label,
+.benefits-copy .mini-label {
+  color: #d72f9c;
+  text-shadow: 0 10px 28px rgba(215, 47, 156, 0.18);
+}
+
+.alliance-card .mini-label,
+.hero .mini-label,
+.hero .eyebrow {
+  color: #ffd6ef;
+}
+
 @media (max-width: 1080px) {
   .nav-links,
   .nav-cta {
